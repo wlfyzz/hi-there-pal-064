@@ -4,7 +4,7 @@ import { PodiumCardSkeleton, LeaderboardRowSkeleton } from "@/components/Enhance
 import { NetworkErrorDisplay, ErrorBoundary } from "@/components/ErrorBoundary";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { useClashLeaderboard } from "@/hooks/useClashLeaderboard";
+import { useRustclashLeaderboard } from "@/hooks/useRustclashLeaderboard";
 import { CountdownTimer } from "@/components/CountdownTimer";
 import { RefreshCw, TrendingUp, Users, Clock, Radio, Zap, Sword } from "lucide-react";
 import { Link } from "react-router-dom";
@@ -13,7 +13,7 @@ import rainLogo from "@/assets/rain.png";
 import gemCoin from "@/assets/gem.svg";
 
 const Clash = () => {
-  const { data, isLoading, error, refetch, isRefetching } = useClashLeaderboard();
+  const { data, isLoading, error, refetch, isRefetching } = useRustclashLeaderboard();
 
   const handleRetry = () => {
     refetch();
@@ -37,7 +37,7 @@ const Clash = () => {
                     <div className="w-2 h-2 bg-gaming-orange rounded-full animate-pulse"></div>
                   </div>
                 </div>
-                <Link to="/">
+                <Link to="/syskeys/rain">
                   <img 
                     src={rainLogo} 
                     alt="Rain.gg" 
@@ -82,7 +82,7 @@ const Clash = () => {
 
               <div className="flex justify-center mb-6">
                 <Button asChild variant="outline" className="hover-lift">
-                  <Link to="/prev-leaderboard/clash">
+                  <Link to="/prev-leaderboard/rustclash">
                     Previous Leaderboard
                   </Link>
                 </Button>

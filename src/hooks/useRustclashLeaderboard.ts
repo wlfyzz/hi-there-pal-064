@@ -16,7 +16,7 @@ const fetchLeaderboard = async (): Promise<RainData> => {
   const timeoutId = setTimeout(() => controller.abort(), 10000); // 10s timeout
   
   try {
-    const response = await fetch("https://api.wlfyzz.net/radio/clash", {
+    const response = await fetch("https://api.wlfyzz.net/radio/rustclash", {
       signal: controller.signal,
       headers: {
         'Accept': 'application/json',
@@ -48,9 +48,9 @@ const fetchLeaderboard = async (): Promise<RainData> => {
   }
 };
 
-export const useClashLeaderboard = () => {
+export const useRustclashLeaderboard = () => {
   return useQuery({
-    queryKey: ["clash-leaderboard"],
+    queryKey: ["rustclash-leaderboard"],
     queryFn: fetchLeaderboard,
     refetchInterval: 15 * 60 * 1000, // Refetch every 15 minutes
     refetchIntervalInBackground: true,
