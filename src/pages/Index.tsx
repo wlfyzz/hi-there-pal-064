@@ -45,9 +45,10 @@ const Index = () => {
                 </Link>
               </div>
 
+
               <div className="flex justify-center items-center gap-3 mb-6">
                 <h1 className="text-4xl md:text-6xl font-bold bg-gradient-primary bg-clip-text text-transparent animate-bounce-in">
-                  Rain.gg Leaderboard
+                  Rain Leaderboard
                 </h1>
               </div>
               
