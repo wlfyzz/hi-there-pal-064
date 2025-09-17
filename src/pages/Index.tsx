@@ -9,7 +9,7 @@ import { CountdownTimer } from "@/components/CountdownTimer";
 import { RefreshCw, TrendingUp, Users, Clock, Radio, Zap, Sword } from "lucide-react";
 import { Link } from "react-router-dom";
 import rainLogo from "@/assets/rain.png";
-import clashLogo from "@/assets/clash.png";
+import clashLogo from "@/assets/rustclash-banner.png";
 
 const Index = () => {
   const { data, isLoading, error, refetch, isRefetching } = useLeaderboard();
