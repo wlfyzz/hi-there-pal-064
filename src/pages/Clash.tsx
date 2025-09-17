@@ -10,7 +10,6 @@ import { RefreshCw, TrendingUp, Users, Clock, Radio, Zap, Sword } from "lucide-r
 import { Link } from "react-router-dom";
 import clashLogo from "@/assets/clash.png";
 import rainLogo from "@/assets/rain.png";
-import skinraveLogo from "@/assets/skinrave.svg";
 import gemCoin from "@/assets/gem.svg";
 
 const Clash = () => {
@@ -45,13 +44,6 @@ const Clash = () => {
                     className="h-16 w-auto cursor-pointer hover-lift transition-all duration-300 opacity-60 hover:opacity-100 border-2 border-transparent hover:border-gaming-orange/50 rounded-lg" 
                   />
                 </Link>
-                <Link to="/skinrave">
-                  <img 
-                    src={skinraveLogo} 
-                    alt="Skinrave" 
-                    className="h-16 w-auto cursor-pointer hover-lift transition-all duration-300 opacity-60 hover:opacity-100 border-2 border-transparent hover:border-gaming-orange/50 rounded-lg" 
-                  />
-                </Link>
               </div>
 
               <div className="flex justify-center items-center gap-3 mb-6">
@@ -68,12 +60,12 @@ const Clash = () => {
                 <p className="text-center text-foreground responsive-text">
                   Use code{" "}
                   <a 
-                    href="https://clash.gg/r/radiobtw" 
+                    href="https://clash.gg/r/syskeys" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="font-bold text-gaming-orange bg-gaming-orange/10 px-3 py-2 rounded border-2 border-gaming-orange/30 hover:bg-gaming-orange hover:text-gaming-dark transition-all duration-300 underline decoration-2 underline-offset-2 hover-lift"
                   >
-                    radiobtw
+                    syskeys
                   </a>{" "}
                   to participate
                 </p>

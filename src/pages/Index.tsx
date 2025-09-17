@@ -9,7 +9,6 @@ import { CountdownTimer } from "@/components/CountdownTimer";
 import { RefreshCw, TrendingUp, Users, Clock, Radio, Zap, Sword } from "lucide-react";
 import { Link } from "react-router-dom";
 import rainLogo from "@/assets/rain.png";
-import skinraveLogo from "@/assets/skinrave.svg";
 import clashLogo from "@/assets/clash.png";
 
 const Index = () => {
@@ -37,13 +36,6 @@ const Index = () => {
                     <div className="w-2 h-2 bg-gaming-orange rounded-full animate-pulse"></div>
                   </div>
                 </div>
-                <Link to="/skinrave">
-                  <img 
-                    src={skinraveLogo} 
-                    alt="Skinrave" 
-                    className="h-16 w-auto cursor-pointer hover-lift transition-all duration-300 opacity-60 hover:opacity-100 border-2 border-transparent hover:border-gaming-orange/50 rounded-lg" 
-                  />
-                </Link>
                 <Link to="/clash">
                   <img 
                     src={clashLogo} 
@@ -67,12 +59,12 @@ const Index = () => {
                 <p className="text-center text-foreground responsive-text">
                   Use code{" "}
                   <a 
-                    href="https://rain.gg/r/radiobtw" 
+                    href="https://rain.gg/r/syskeys" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="font-bold text-gaming-orange bg-gaming-orange/10 px-3 py-2 rounded border-2 border-gaming-orange/30 hover:bg-gaming-orange hover:text-gaming-dark transition-all duration-300 underline decoration-2 underline-offset-2 hover-lift"
                   >
-                    radiobtw
+                    syskeys
                   </a>{" "}
                   to participate
                 </p>
