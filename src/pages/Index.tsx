@@ -36,7 +36,7 @@ const Index = () => {
                     <div className="w-2 h-2 bg-gaming-orange rounded-full animate-pulse"></div>
                   </div>
                 </div>
-                <Link to="/syskeys/rustclash">
+                <Link to="/clash">
                   <img 
                     src={clashLogo} 
                     alt="Clash.gg" 

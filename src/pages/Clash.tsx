@@ -37,7 +37,7 @@ const Clash = () => {
                     <div className="w-2 h-2 bg-gaming-orange rounded-full animate-pulse"></div>
                   </div>
                 </div>
-                <Link to="/syskeys/rain">
+                <Link to="/">
                   <img 
                     src={rainLogo} 
                     alt="Rain.gg" 
@@ -82,7 +82,7 @@ const Clash = () => {
 
               <div className="flex justify-center mb-6">
                 <Button asChild variant="outline" className="hover-lift">
-                  <Link to="/prev-leaderboard/rustclash">
+                  <Link to="/prev-leaderboard/clash">
                     Previous Leaderboard
                   </Link>
                 </Button>
