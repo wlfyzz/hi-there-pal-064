@@ -8,9 +8,9 @@ import { useRustclashLeaderboard } from "@/hooks/useRustclashLeaderboard";
 import { CountdownTimer } from "@/components/CountdownTimer";
 import { RefreshCw, TrendingUp, Users, Clock, Radio, Zap, Sword } from "lucide-react";
 import { Link } from "react-router-dom";
-import clashLogo from "@/assets/clash.png";
+import rustclashBanner from "@/assets/rustclash-banner.png";
 import rainLogo from "@/assets/rain.png";
-import gemCoin from "@/assets/gem.svg";
+import rustclashGem from "@/assets/rustclash-gem.png";
 
 const Clash = () => {
   const { data, isLoading, error, refetch, isRefetching } = useRustclashLeaderboard();
@@ -29,8 +29,8 @@ const Clash = () => {
               <div className="flex justify-center items-center gap-6 mb-8">
                 <div className="relative">
                   <img 
-                    src={clashLogo} 
-                    alt="Clash.gg" 
+                    src={rustclashBanner} 
+                    alt="RustClash" 
                     className="h-16 w-auto cursor-pointer hover-lift transition-all duration-300 border-2 border-gaming-orange rounded-lg shadow-lg" 
                   />
                   <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2">
@@ -48,19 +48,19 @@ const Clash = () => {
 
               <div className="flex justify-center items-center gap-3 mb-6">
                 <h1 className="text-4xl md:text-6xl font-bold bg-gradient-primary bg-clip-text text-transparent animate-bounce-in">
-                  Clash.gg Leaderboard
+                  RustClash Leaderboard
                 </h1>
               </div>
               
               <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-                Track the top performers in our Clash.gg competition
+                Track the top performers in our RustClash competition
               </p>
 
               <div className="mb-4 p-4 bg-card border border-border rounded-lg hover-lift">
                 <p className="text-center text-foreground responsive-text">
                   Use code{" "}
                   <a 
-                    href="https://clash.gg/r/syskeys" 
+                    href="https://rustclash.com/r/syskeys" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="font-bold text-gaming-orange bg-gaming-orange/10 px-3 py-2 rounded border-2 border-gaming-orange/30 hover:bg-gaming-orange hover:text-gaming-dark transition-all duration-300 underline decoration-2 underline-offset-2 hover-lift"
@@ -75,14 +75,14 @@ const Clash = () => {
                 <div className="flex justify-center mb-6">
                   <CountdownTimer 
                     endDate={data.ends_at} 
-                    title="Clash.gg Competition Ends in"
+                    title="RustClash Competition Ends in"
                   />
                 </div>
               )}
 
               <div className="flex justify-center mb-6">
                 <Button asChild variant="outline" className="hover-lift">
-                  <Link to="/prev-leaderboard/clash">
+                  <Link to="/prev-leaderboard/rustclash">
                     Previous Leaderboard
                   </Link>
                 </Button>
@@ -123,7 +123,7 @@ const Clash = () => {
                         wager={data.participants[1].wager}
                         prize={data.participants[1].prize}
                         avatar={data.participants[1].avatar}
-                        coinIcon={gemCoin}
+                        coinIcon={rustclashGem}
                       />
                     </div>
                   )}
@@ -137,7 +137,7 @@ const Clash = () => {
                         wager={data.participants[0].wager}
                         prize={data.participants[0].prize}
                         avatar={data.participants[0].avatar}
-                        coinIcon={gemCoin}
+                        coinIcon={rustclashGem}
                         isWinner
                       />
                     </div>
@@ -152,7 +152,7 @@ const Clash = () => {
                         wager={data.participants[2].wager}
                         prize={data.participants[2].prize}
                         avatar={data.participants[2].avatar}
-                        coinIcon={gemCoin}
+                        coinIcon={rustclashGem}
                       />
                     </div>
                   )}
@@ -173,7 +173,7 @@ const Clash = () => {
                 </div>
               ) : (
                 data && data.participants.length > 3 && (
-                  <LeaderboardTable data={data.participants.slice(3)} startFromRank={4} coinIcon={gemCoin} />
+                  <LeaderboardTable data={data.participants.slice(3)} startFromRank={4} coinIcon={rustclashGem} />
                 )
               )}
             </div>
